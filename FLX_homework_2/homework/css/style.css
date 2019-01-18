@@ -56,8 +56,8 @@ p:not(.tm-banner-text) {
         border-top: 25px solid deepskyblue;
         border-right: 100px solid transparent;
         position: absolute; 
-        top: 0 + padding;
-        left: 0 + padding;
+        top: 0;
+        left: 0;
     }
     .tm-section-title {
         color: gainsboro;
@@ -102,7 +102,7 @@ p:not(.tm-banner-text) {
     button[type="submit"]:hover {
         color: white;
         background-color: #87CEFA;
-        border-color: #87CEFA;
+        border: none;
     }
     .tm-main-nav a:hover {
         background-color: #e3e3e3;
