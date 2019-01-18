@@ -1,0 +1,116 @@
+@media print {
+    section:not(:first-of-type), .gallery-container, .tm-sidebar {
+        display: none;
+    }
+    .flex-2-col{
+        height: 320px;
+    }
+    .tm-content-box.flex-2-col:first-child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .tm-team-description-container .tm-section-title {
+        color: #012fdc;
+    }
+    .flex-item img{
+        width: 270px;
+    }
+}
+
+.flex-2-col {
+    display: flex;
+    flex-direction: row;
+}
+p:first-letter {
+    color: #87CEFA;
+    font-size: 30px;
+}
+h2 + p {
+    font-style: italic;
+}
+p:not(.tm-banner-text) {
+    line-height: 1.6;
+    text-indent: 1.5em;
+}
+
+@media screen {
+    .tm-section-title-box:nth-child(odd):hover {
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: #87CEFA;
+    }
+    nav, .tm-content-box {
+        box-shadow: -3px 2px 16px 0px #635e5e;
+    }
+    .tm-banner{
+        padding: 0;
+    }
+    .tm-banner-inner {
+        border: 30px solid #e3e3e3;
+    }
+    section::before{
+        content: '';
+        border-top: 25px solid deepskyblue;
+        border-right: 100px solid transparent;
+        position: absolute; 
+        top: 0 + padding;
+        left: 0 + padding;
+    }
+    .tm-section-title {
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+    .box-work {
+        padding: 5px;
+    }
+    .box-work p {
+        text-indent: 0;
+    }
+    .box-work p:first-letter {
+        color: grey;
+        font-size: 30px;
+    }
+    .box-work:nth-child(even) {
+        background-color: #e3e3e3;
+    }
+    .heading a:visited {
+        text-decoration: underline;
+    }
+    .heading a:hover {
+        text-decoration-line: underline;
+        text-decoration-style: double;
+        color: deepskyblue;
+    }
+    .heading a.text::after {
+        content: "New";
+        color: red;
+        vertical-align: super;
+        font-size: 12px;
+    }
+    button[type="submit"] {
+        border-radius: 0;
+        padding-left: 45px;
+        padding-right: 45px;
+        border-color: #87CEFA;
+        color: #87CEFA;
+        background-color: white;
+        float: right;
+    }
+    button[type="submit"]:hover {
+        color: white;
+        background-color: #87CEFA;
+        border-color: #87CEFA;
+    }
+    .tm-main-nav a:hover {
+        background-color: #e3e3e3;
+    }
+    .mandatory-field::after {
+        content: "*";
+        color: red;
+        font-size: 14px;
+        font-weight: bold;
+    }  
+}
