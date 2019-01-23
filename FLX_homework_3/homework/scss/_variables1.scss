@@ -1,0 +1,35 @@
+$contentBackground: #ffffff;
+$borderStyle: #607d8b solid 1px;
+$backgroundImage: url("../img/header_background_v1.jpg");
+$primeryColor: #01acac;
+$headerTextColor: #ffffff;
+$hoverButtonColor: darken( $primeryColor, 10% );
+$articleBgColor: #efefef;
+$articleDescriptionColor: #ff5722;
+
+@mixin fontStyle {
+    font-family: Roboto, Ubuntu, Cantarell, Helvetica ,sans-serif;
+    font-size: 15px;
+    font-weight: normal 300; 
+    line-height: 1.5;
+
+}
+@mixin articleHeading {
+    text-transform: uppercase;
+    color: $primeryColor;
+    margin: 4px;
+}
+@mixin button {
+    cursor: pointer;
+    border: none;
+    background-color: $primeryColor;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 60px 10px 60px;
+}
+@mixin headingStyle {
+    text-transform: uppercase;
+    margin: 10px 0 0 0;   
+    display: flex;
+    justify-content: flex-end;
+}

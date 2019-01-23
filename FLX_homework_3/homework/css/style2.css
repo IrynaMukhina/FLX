@@ -1,0 +1,168 @@
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 18px;
+  color: #757575;
+  font-weight: normal;
+  line-height: 1.5;
+  background: #efefef;
+  margin: 0; }
+
+header {
+  background: url("../img/header_background_v2.jpg") no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover; }
+  header .logo img {
+    height: 20%;
+    width: 20%; }
+  header nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 45%;
+    top: 0; }
+    header nav a {
+      text-align: center;
+      padding: 15px 60px 15px 60px;
+      color: #ff5722;
+      text-decoration: none;
+      text-transform: uppercase; }
+      header nav a:nth-child(2) {
+        border-left: #bdbdbd solid 1px;
+        border-right: #bdbdbd solid 1px; }
+  header section {
+    margin-top: 100px;
+    vertical-align: middle;
+    text-align: center; }
+    header section h1 {
+      color: #ff5722;
+      text-transform: uppercase; }
+    header section .btn-top {
+      cursor: pointer;
+      border: none;
+      background-color: #0401ac;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 10px 60px 10px 60px;
+      text-decoration: none; }
+      header section .btn-top:hover {
+        background-color: #020047; }
+
+main {
+  margin: 0 auto;
+  width: 960px; }
+
+.toolbar {
+  margin: 15px 0 15px 0;
+  display: flex;
+  justify-content: flex-end; }
+  .toolbar input[type="text"] {
+    padding: 10px;
+    border: #bdbdbd solid 1px;
+    background-color: #efefef; }
+
+.post-list {
+  display: flex;
+  flex-direction: column; }
+  .post-list h1 {
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: flex-end; }
+
+article {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 15px; }
+  article img {
+    width: 30%;
+    height: 30%; }
+  article div {
+    padding: 5px;
+    flex-direction: column; }
+    article div .post .post-description {
+      color: #bdbdbd;
+      border-bottom: #bdbdbd solid 1px; }
+    article div .post h3 {
+      text-transform: uppercase;
+      color: #607d8b;
+      margin: 4px; }
+    article div .post p {
+      margin: 0; }
+    article div .btn {
+      cursor: pointer;
+      border: none;
+      background-color: #0401ac;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 10px 60px 10px 60px;
+      margin: 10px 15px 0 0;
+      float: right; }
+      article div .btn:hover {
+        background-color: #020047; }
+
+.about h1 {
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: flex-end; }
+.about p:first-of-type {
+  margin-top: 0; }
+.about img {
+  width: 100%; }
+
+.contact-form h1 {
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: flex-end; }
+.contact-form h4 {
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: flex-end; }
+.contact-form .form {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start; }
+  .contact-form .form .form-group .form-control {
+    border: #bdbdbd solid 1px;
+    height: 30px;
+    width: 100%;
+    padding: 0;
+    background-color: #efefef; }
+  .contact-form .form .form-group p {
+    text-align: right;
+    color: #0401ac;
+    margin-bottom: 0; }
+  .contact-form .form .form-group #contact_message {
+    height: 100px;
+    resize: none; }
+  .contact-form .form .form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .contact-form .form .form-container div {
+      width: 48%; }
+  .contact-form .form .submit-btn {
+    cursor: pointer;
+    border: none;
+    background-color: #0401ac;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 60px 10px 60px;
+    width: 170px;
+    float: right; }
+    .contact-form .form .submit-btn:hover {
+      background-color: #020047; }
+
+@media screen and (max-width: 1000px) {
+  header nav {
+    position: absolute;
+    left: 35%;
+    top: 0; }
+    header nav a {
+      padding: 15px 50px 15px 50px; } }
