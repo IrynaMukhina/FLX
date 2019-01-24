@@ -128,16 +128,16 @@ article {
   display: flex;
   flex-direction: column;
   align-content: flex-start; }
+  .contact-form .form .form-group p {
+    text-align: right;
+    color: #607d8b;
+    margin-bottom: 0; }
   .contact-form .form .form-group .form-control {
     border: #bdbdbd solid 1px;
     height: 30px;
     width: 100%;
     padding: 0;
     background-color: #efefef; }
-  .contact-form .form .form-group p {
-    text-align: right;
-    color: #0401ac;
-    margin-bottom: 0; }
   .contact-form .form .form-group #contact_message {
     height: 100px;
     resize: none; }

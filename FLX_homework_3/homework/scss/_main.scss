@@ -1,3 +1,30 @@
+@mixin fontStyle {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $textColor;
+    font-weight: $fontWeight; 
+    line-height: 1.5;
+}
+@mixin articleHeading {
+    text-transform: uppercase;
+    color: $headingColor;
+    margin: 4px;
+}
+@mixin button {
+    cursor: pointer;
+    border: none;
+    background-color: $primeryColor;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 60px 10px 60px;
+}
+@mixin headingStyle {
+    text-transform: uppercase;
+    margin: 10px 0 0 0;   
+    display: flex;
+    justify-content: flex-end;
+}
+
 body {
     @include fontStyle;
     background: $contentBackground;
@@ -132,17 +159,17 @@ article {
         flex-direction: column;
         align-content: flex-start;
         .form-group {
+            p {
+                text-align: right;
+                color: $headingColor;
+                margin-bottom: 0;
+            }
             .form-control {
                 border: $borderStyle;
                 height: 30px;
                 width: 100%;
                 padding: 0;
                 background-color: $contentBackground;
-            }
-            p {
-                text-align: right;
-                color: $primeryColor;
-                margin-bottom: 0;
             }
             #contact_message {
                 height: 100px;
