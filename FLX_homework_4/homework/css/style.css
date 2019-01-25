@@ -26,7 +26,8 @@
   }
   .top-wrapper .logo p {
     margin: 0;
-    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 5px;
   }
   .login {
     width: 20%;
