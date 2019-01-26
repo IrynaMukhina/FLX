@@ -10,7 +10,6 @@ body {
 header {
   background: url("../img/header_background_v2.jpg") no-repeat;
   height: 100vh;
-  width: 100vw;
   background-size: cover; }
   header .logo img {
     height: 20%;
@@ -24,13 +23,15 @@ header {
     top: 0; }
     header nav a {
       text-align: center;
-      padding: 15px 60px 15px 60px;
+      padding: 15px 100px 15px 100px;
       color: #ff5722;
       text-decoration: none;
       text-transform: uppercase; }
       header nav a:nth-child(2) {
         border-left: #bdbdbd solid 1px;
         border-right: #bdbdbd solid 1px; }
+      header nav a:hover {
+        background-color: rgba(255, 255, 255, 0.4); }
   header section {
     margin-top: 100px;
     vertical-align: middle;
