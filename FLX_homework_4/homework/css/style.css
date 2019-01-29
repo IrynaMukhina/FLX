@@ -1,5 +1,5 @@
 @media screen and (min-width: 900px) {
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
   body {
     margin: 0;
   }
@@ -242,7 +242,6 @@
   .bottom-wrapper .bottom-section:nth-child(2) p {
     font-style: italic;
   }
-  
   .bottom-navigation-box {
     padding: 10px 30px 10px 30px;
     margin-bottom: 10px;
