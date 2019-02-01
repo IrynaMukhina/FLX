@@ -41,7 +41,8 @@ header .menu-wrapper {
   width: 35%;
   justify-content: stretch;
 }
-header .menu-wrapper a {
+header .menu-wrapper div {
+  display: inline;
   padding: 25px 0 25px 0;
   width: 25%;
   text-decoration: none;
@@ -50,7 +51,8 @@ header .menu-wrapper a {
   align-self: center;
   text-align: center;
 }
-header .menu-wrapper a:hover{
+header .menu-wrapper div:hover{
+  cursor: pointer;
   background: rgba(184, 184, 184, 0.2);
 }
 main {
@@ -129,30 +131,9 @@ main {
 .post-5 {
 	background: #2d95bb;
 }
-.post-1 .post-content:hover, .post-1 .post-image:hover {
+.post-content:hover, .post-image:hover {
   cursor: pointer;
-  background: #B71757;
-  opacity: 0.5;
-}
-.post-2 .post-content:hover, .post-2 .post-image:hover {
-  cursor: pointer;
-  background: #0D7E71;
-  opacity: 0.5;
-}
-.post-3 .post-content:hover, .post-3 .post-image:hover {
-  cursor: pointer;
-  background: #b1660e;
-  opacity: 0.5;
-}
-.post-4 .post-content:hover, .post-4 .post-image:hover {
-  cursor: pointer;
-  background: #d12767;
-  opacity: 0.5;
-}
-.post-5 .post-content:hover, .post-5 .post-image:hover {
-  cursor: pointer;
-  background: #2d95bb;
-  opacity: 0.5;
+  filter: opacity(0.5);
 }
 .article-wrapper {
   flex-direction: column;
