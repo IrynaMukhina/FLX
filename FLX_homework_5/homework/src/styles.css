@@ -20,7 +20,7 @@ header, section, .post-content, footer {
 header {
   background: #162b4d;
   justify-content: space-between;
-  height: 80px;
+  align-items: baseline;
 }
 header .logo-wrapper {
   padding-left: 15px;
