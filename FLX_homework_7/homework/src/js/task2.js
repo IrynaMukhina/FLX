@@ -38,25 +38,23 @@ Do you want to continue?`);
           gameData.maxPrize = 10;
           gameData.currentPrize = 10;
           gameData.totalPrize = 0;
-        } else {
-					break;
-        }   
+        }  
       }
     } else {
-        gameData.gameAttempts--;
-        gameData.currentPrize = Math.floor(gameData.currentPrize/2);
-      }
-  }
-  if (gameData.gameAttempts === 0) {
-    alert(`Thank you for a game. Your prize is: ${gameData.totalPrize}`);
-    let playAgain = confirm('Do you wants to play again?');
-      if (playAgain) {
-        gameData.gameAttempts = 3;
-        gameData.maxRandomNum = 5;
-        gameData.maxPrize = 10;
-        gameData.currentPrize = 10;
-        gameData.totalPrize = 0;
-    } 
+      gameData.gameAttempts--;
+			gameData.currentPrize = Math.floor(gameData.currentPrize/2);
+			if (gameData.gameAttempts === 0) {
+				alert(`Thank you for a game. Your prize is: ${gameData.totalPrize}`);
+				let playAgain = confirm('Do you wants to play again?');
+				if (playAgain) {
+					gameData.gameAttempts = 3;
+					gameData.maxRandomNum = 5;
+					gameData.maxPrize = 10;
+					gameData.currentPrize = 10;
+					gameData.totalPrize = 0;
+				} 
+			}
+    }
   }
 } else {
     alert('You did not become a millionaire, but can.');
