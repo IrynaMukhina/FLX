@@ -30,8 +30,8 @@ Do you want to continue?`);
         gameData.maxPrize *= 3;
         gameData.currentPrize = gameData.maxPrize;
       } else {
-      	  alert(`Thank you for a game. Your prize is: ${gameData.totalPrize}`);
-          let playAgain = confirm('Do you wants to play again?');
+					alert(`Thank you for a game. Your prize is: ${gameData.totalPrize}`);
+					let playAgain = confirm('Do you wants to play again?');
           if (playAgain) {
             gameData.gameAttempts = 3;
             gameData.maxRandomNum = 5;
@@ -39,8 +39,8 @@ Do you want to continue?`);
             gameData.currentPrize = 10;
             gameData.totalPrize = 0;
           } else {
-            	break;
-          	}   
+						break;
+          }   
         }
     } else {
         gameData.gameAttempts--;
@@ -49,7 +49,7 @@ Do you want to continue?`);
   }
   if (gameData.gameAttempts === 0) {
     alert(`Thank you for a game. Your prize is: ${gameData.totalPrize}`);
-    playAgain = confirm('Do you wants to play again?');
+    let playAgain = confirm('Do you wants to play again?');
       if (playAgain) {
         gameData.gameAttempts = 3;
         gameData.maxRandomNum = 5;
