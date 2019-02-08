@@ -28,16 +28,16 @@ Possible prize on current attempt: ${gameData.currentPrize}`);
 Do you want to continue?`);
       if (wantContinue) {
         gameData.maxPrize *= 3;
-        gameData.currentPrize = gameData.maxPrize;
-      } else {
+				gameData.currentPrize = gameData.maxPrize;
+			} else {
 				alert(`Thank you for a game. Your prize is: ${gameData.totalPrize}`);
 				let playAgain = confirm('Do you wants to play again?');
 				if (playAgain) {
-          gameData.gameAttempts = 3;
-          gameData.maxRandomNum = 5;
-          gameData.maxPrize = 10;
-          gameData.currentPrize = 10;
-          gameData.totalPrize = 0;
+					gameData.gameAttempts = 3;
+					gameData.maxRandomNum = 5;
+					gameData.maxPrize = 10;
+					gameData.currentPrize = 10;
+					gameData.totalPrize = 0;
         }  
       }
     } else {
@@ -57,5 +57,5 @@ Do you want to continue?`);
     }
   }
 } else {
-    alert('You did not become a millionaire, but can.');
+  alert('You did not become a millionaire, but can.');
 }
