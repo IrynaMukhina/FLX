@@ -24,7 +24,7 @@ Possible prize on current attempt: ${gameData.currentPrize}`);
       gameData.gameAttempts = 3;
       gameData.maxRandomNum *= 2;
       gameData.currentPrize *= 3;
-      let wantContinue = confirm(`Congratulation! Your prize is: ${gameData.totalPrize} 
+      let wantContinue = confirm(`Congratulation! Your prize is: ${gameData.totalPrize}
 Do you want to continue?`);
       if (wantContinue) {
         gameData.maxPrize *= 3;
@@ -38,7 +38,7 @@ Do you want to continue?`);
 					gameData.maxPrize = 10;
 					gameData.currentPrize = 10;
 					gameData.totalPrize = 0;
-        }  
+        }
       }
     } else {
       gameData.gameAttempts--;
@@ -52,7 +52,7 @@ Do you want to continue?`);
 					gameData.maxPrize = 10;
 					gameData.currentPrize = 10;
 					gameData.totalPrize = 0;
-				} 
+				}
 			}
     }
   }
