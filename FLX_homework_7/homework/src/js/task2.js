@@ -18,7 +18,7 @@ Possible prize on current attempt: ${gameData.currentPrize}`);
             alert('You did not become a millionaire, but can.');
             break;
         }
-        if (+userNum === randomNum) {
+        if (parseFloat(userNum) === randomNum) {
             gameData.totalPrize += gameData.currentPrize;
             gameData.gameAttempts = 3;
             gameData.maxRandomNum *= 2;
